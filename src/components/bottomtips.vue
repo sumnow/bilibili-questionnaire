@@ -18,6 +18,11 @@ export default {
       questionslength: this.$store.state.questions.length,
     }
   },
+  watch: {
+    getscore (o,v) {
+      return this.$store.state.score
+    }
+  },
   methods: {
     gettips () {
       return this.$store.state.tips;

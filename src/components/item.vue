@@ -25,11 +25,10 @@ export default {
     'getindex',
     'getoptions'
   ]),
-  methods: {
-    ...mapActions(['addlocal'])
-  },
+  methods: mapActions(['addlocal'])
+  ,
   created () {
-    // console.log(this.$store)
+    console.log(this.$store)
   },
   watch: {
     getindex: function (v,o){
